@@ -3,9 +3,14 @@
   src: url(./Fonts/Sixtyfour-Regular.ttf);
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Sixty';
   background: #8ff59c;
+  max-height: 100vh;  
 }
 
 .password {
@@ -16,15 +21,19 @@ body{
 }
 
 .displayPasswordContainer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* grid-template-columns: 80% 20%; */
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
-  height: 60px;
+  margin: 20px 50%;
+  height: 110px;
   width: 90%;
   font-size: 1.3rem;
-  border: 0.5px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+}
+
+.displayPassword{
+margin-top: 10px;
 }
 
 .range{
@@ -56,12 +65,7 @@ body{
   transition: 0.5s;
 }
 
- .inputs div:hover{
-  
-  font-weight: bold;
-  font-size: 0.95rem;
-  
-}
+
 
 #Generate {
   width: 400px;
@@ -70,13 +74,19 @@ body{
  background: #ffffff;
   font-family: 'Sixty';
   font-size: 0.9rem;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 #Generate:hover{
   cursor: pointer;
   font-weight: bold;
   font-size: 0.95rem;
+  
+}
+
+#Generate:active{
+  cursor: pointer;
+  font-size: 0.9rem;
   
 }
 
@@ -99,7 +109,22 @@ body{
 }
 
 .copy {
-  position: absolute;
-  top: 50px;
-  left: 1300px;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.26);
+
+}
+
+
+.lastpassword{
+  margin-top: 70px;
+  margin-left: 70px;
+  
+}
+
+.lastpasswordgenerate{
+  display: flex;
+  /* margin-top: 20px; */
+  margin-left: 50px;
+  
+  
 }

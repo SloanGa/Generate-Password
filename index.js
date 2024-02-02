@@ -8,11 +8,7 @@ const displayPassword = document.querySelector(".displayPassword");
 const displayPasswordContainer = document.querySelector(
   ".displayPasswordContainer"
 );
-
-const copy = document.createElement("div");
-copy.classList.add("copy");
-document.body.appendChild(copy);
-copy.textContent = "";
+const copy = document.querySelector(".copy");
 
 let displayValue = 8;
 
@@ -29,6 +25,17 @@ generate.addEventListener("click", () => {
   generatePassword(displayValue);
   copy.innerHTML = `
   <button>Copier</button>
+  `;
+
+  const lastPasswordGenerate = document.createElement("div");
+  lastPasswordGenerate.classList.add("lastpasswordgenerate");
+  document.body.appendChild(lastPasswordGenerate);
+  lastPasswordGenerate.innerHTML = `
+  
+  
+<ul>- ${displayPassword.textContent}</ul>
+
+  
   `;
 });
 
