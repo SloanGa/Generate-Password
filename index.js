@@ -10,7 +10,7 @@ const displayPasswordContainer = document.querySelector(
 );
 const copy = document.querySelector(".copy");
 
-let displayValue = 8;
+let displayValue = 22;
 
 rangePassword.addEventListener("input", (e) => {
   displayValue = e.target.value;
