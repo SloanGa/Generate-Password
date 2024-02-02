@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generate Passeword</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Style/style.css" />
   </head>
   <body>
     <div class="password">
-      <div class="displayPassword"></div>
+      <div class="displayPasswordContainer">
+        <div class="displayPassword"></div>
+      </div>
       <div class="range">
-        <input type="range" name="range" id="rangePassword" min="8" max="36" />
-        <label for="range" id="dpRange">8</label>
+        <input
+          type="range"
+          name="range"
+          id="rangePassword"
+          min="8"
+          max="36"
+          value="22"
+        />
+        <label for="range" id="dpRange"
+          >Longueur du mot de passe : 22 caractères.</label
+        >
       </div>
       <div class="inputs">
         <div class="maj">

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Sixty';
+  src: url(./Fonts/Sixtyfour-Regular.ttf);
+}
+
+body{
+  font-family: 'Sixty';
+  background: #8ff59c;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.displayPasswordContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 60px;
+  width: 90%;
+  font-size: 1.3rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.26);
+}
+
+.range{
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#rangePassword{
+  height: 50px;
+  
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 0;
+}
+
+.inputs div {
+  padding: 5px 0;
+  width: 400px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+ .inputs div:hover{
+  
+  font-weight: bold;
+  font-size: 0.95rem;
+  
+}
+
+#Generate {
+  width: 400px;
+  margin-top: 10px;
+  padding: 5px;
+ background: #ffffff;
+  font-family: 'Sixty';
+  font-size: 0.9rem;
+  transition: 0.5s;
+}
+
+#Generate:hover{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  
+}
+
+
+.copy button{
+  width: 200px;
+  margin-top: 10px;
+  padding: 5px;
+ background: #ffffff;
+  font-family: 'Sixty';
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.copy button:hover{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  
+}
+
+.copy {
+  position: absolute;
+  top: 50px;
+  left: 1300px;
+}
